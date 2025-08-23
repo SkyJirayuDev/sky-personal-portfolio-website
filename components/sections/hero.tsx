@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ExternalLink, Github, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
 import { TrustBadges } from "./trust-badges";
 import { MagneticButton } from "../ui/magnetic-button";
 import { CopyToClipboard } from "../ui/copy-to-clipboard";
