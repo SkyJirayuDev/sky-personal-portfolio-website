@@ -38,6 +38,7 @@ e2e/
 ## Available Scripts
 
 ### Unit Testing
+
 ```bash
 npm run test              # Run tests in watch mode
 npm run test:run          # Run tests once
@@ -46,6 +47,7 @@ npm run test:ui           # Run tests with UI interface
 ```
 
 ### Component Testing
+
 ```bash
 npm run test:components   # Run component tests only
 npm run test:utils        # Run utility tests only
@@ -53,6 +55,7 @@ npm run test:accessibility # Run accessibility tests only
 ```
 
 ### End-to-End Testing
+
 ```bash
 npm run e2e               # Run E2E tests headless
 npm run e2e:headed        # Run E2E tests with browser UI
@@ -61,6 +64,7 @@ npm run e2e:report        # Show E2E test report
 ```
 
 ### Performance Testing
+
 ```bash
 npm run lighthouse        # Run Lighthouse CI
 npm run lighthouse:collect # Collect Lighthouse data only
@@ -68,6 +72,7 @@ npm run lighthouse:assert  # Assert Lighthouse thresholds
 ```
 
 ### Infrastructure Testing
+
 ```bash
 npm run test:infrastructure # Verify testing setup
 npm run test:all           # Run all test suites
@@ -76,18 +81,21 @@ npm run test:all           # Run all test suites
 ## Test Configuration
 
 ### Vitest Configuration
+
 - **Environment**: jsdom for DOM testing
 - **Coverage**: v8 provider with 80% thresholds
 - **Setup**: Automatic cleanup and mocking
 - **Globals**: Available without imports
 
 ### Playwright Configuration
+
 - **Browsers**: Chromium, Firefox, WebKit
 - **Mobile**: Pixel 5, iPhone 12 viewports
 - **Base URL**: http://localhost:3000
 - **Retries**: 2 on CI, 0 locally
 
 ### Lighthouse Configuration
+
 - **Performance**: ≥95 score required
 - **Accessibility**: 100 score required
 - **Core Web Vitals**: LCP <2.5s, CLS <0.1, TBT <300ms
@@ -96,6 +104,7 @@ npm run test:all           # Run all test suites
 ## Writing Tests
 
 ### Component Tests
+
 ```typescript
 import { render, screen } from '@testing-library/react';
 import { MyComponent } from '@/components/my-component';
@@ -109,6 +118,7 @@ describe('MyComponent', () => {
 ```
 
 ### Accessibility Tests
+
 ```typescript
 import { testAccessibility } from '../accessibility-utils';
 
@@ -118,30 +128,33 @@ it('should not have accessibility violations', async () => {
 ```
 
 ### E2E Tests
-```typescript
-import { test, expect } from '@playwright/test';
 
-test('should navigate correctly', async ({ page }) => {
-  await page.goto('/');
+```typescript
+import { test, expect } from "@playwright/test";
+
+test("should navigate correctly", async ({ page }) => {
+  await page.goto("/");
   await page.click('a[href="#section"]');
-  await expect(page.locator('#section')).toBeInViewport();
+  await expect(page.locator("#section")).toBeInViewport();
 });
 ```
 
 ## Mocking Strategy
 
 ### Framer Motion
+
 ```typescript
-vi.mock('framer-motion', () => ({
+vi.mock("framer-motion", () => ({
   motion: {
-    div: 'div',
-    button: 'button',
+    div: "div",
+    button: "button",
   },
   AnimatePresence: ({ children }) => children,
 }));
 ```
 
 ### Next.js Components
+
 ```typescript
 vi.mock('next/image', () => ({
   default: ({ src, alt, ...props }) => <img src={src} alt={alt} {...props} />
@@ -158,11 +171,13 @@ vi.mock('next/image', () => ({
 ## CI/CD Integration
 
 Tests run automatically on:
+
 - Pull requests to main
 - Pushes to main/develop branches
 - Manual workflow dispatch
 
 ### GitHub Actions Workflow
+
 - **Unit Tests**: Run on all Node.js versions
 - **E2E Tests**: Run on Ubuntu with Playwright
 - **Lighthouse**: Performance regression detection
@@ -189,6 +204,7 @@ Tests run automatically on:
    - Remove excluded files from coverage config
 
 ### Debug Commands
+
 ```bash
 npm run test:ui          # Visual test debugging
 npm run e2e:headed       # Visual E2E debugging

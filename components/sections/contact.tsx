@@ -125,11 +125,13 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
                 What to include in your message:
               </h4>
               <ul className="space-y-2 text-blue-800 dark:text-blue-200 text-sm">
-                <li>• Role title and team, plus the business objective</li>
-                <li>• Core tech stack and scope of responsibilities</li>
-                <li>• Employment type, location or work model, and target start date</li>
-                <li>• Compensation range and interview timeline</li>
-                <li>• Link to the job description and primary contact details</li>
+                <li>Role title and team, plus the business objective</li>
+                <li>Core tech stack and scope of responsibilities</li>
+                <li>
+                  Employment type, location or work model, and target start date
+                </li>
+                <li>Compensation range and interview timeline</li>
+                <li>Link to the job description and primary contact details</li>
               </ul>
             </div>
           </motion.div>

@@ -1,26 +1,26 @@
-import '@testing-library/jest-dom'
-import { afterEach } from 'vitest'
-import { cleanup } from '@testing-library/react'
+import "@testing-library/jest-dom";
+import { afterEach } from "vitest";
+import { cleanup } from "@testing-library/react";
 
 // Cleanup after each test case
 afterEach(() => {
-  cleanup()
-})
+  cleanup();
+});
 
 // Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
-  root = null
-  rootMargin = ''
-  thresholds = []
-  
+  root = null;
+  rootMargin = "";
+  thresholds = [];
+
   constructor() {}
   disconnect() {}
   observe() {}
   unobserve() {}
   takeRecords() {
-    return []
+    return [];
   }
-} as any
+} as any;
 
 // Mock ResizeObserver
 global.ResizeObserver = class ResizeObserver {
@@ -28,10 +28,10 @@ global.ResizeObserver = class ResizeObserver {
   disconnect() {}
   observe() {}
   unobserve() {}
-} as any
+} as any;
 
 // Mock matchMedia
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: (query: string) => ({
     matches: false,
@@ -43,4 +43,4 @@ Object.defineProperty(window, 'matchMedia', {
     removeEventListener: () => {},
     dispatchEvent: () => {},
   }),
-})
+});

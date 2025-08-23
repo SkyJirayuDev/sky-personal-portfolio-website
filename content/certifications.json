@@ -29,13 +29,7 @@
     "url": "https://coursera.org/share/9291a4bb2c1e1cbecf7f728094941d9f",
     "date": "2025",
     "credential_id": "K7WQL6V22JEQ",
-    "skills": [
-      "Python",
-      "Django",
-      "Databases",
-      "APIs",
-      "Version Control"
-    ],
+    "skills": ["Python", "Django", "Databases", "APIs", "Version Control"],
     "description": "Comprehensive Front-end development program covering React, responsive design, and modern web development practices."
   },
   {

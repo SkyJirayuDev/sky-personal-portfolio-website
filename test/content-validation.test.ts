@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from "vitest";
 import {
   validateWithDetails,
   validateContentWithWarnings,
@@ -10,71 +10,76 @@ import {
   convertZodErrors,
   formatValidationErrors,
   createValidationReport,
-} from '@/lib/content/validation';
-import { ProjectSchema, ProfileSchema, CertificationSchema, SkillSchema } from '@/lib/schemas/content';
+} from "@/lib/content/validation";
+import {
+  ProjectSchema,
+  ProfileSchema,
+  CertificationSchema,
+  SkillSchema,
+} from "@/lib/schemas/content";
 
-describe('Content Validation', () => {
-  describe('validateWithDetails', () => {
-    it('should validate valid project data', () => {
+describe("Content Validation", () => {
+  describe("validateWithDetails", () => {
+    it("should validate valid project data", () => {
       const validProject = {
-        slug: 'test-project',
-        name: 'Test Project',
-        summary: 'A test project for validation',
-        tech: ['React', 'TypeScript'],
+        slug: "test-project",
+        name: "Test Project",
+        summary: "A test project for validation",
+        tech: ["React", "TypeScript"],
         links: {
-          live: 'https://example.com',
-          repo: 'https://github.com/user/repo',
+          live: "https://example.com",
+          repo: "https://github.com/user/repo",
         },
-        impact: ['Improved performance by 50%'],
-        role: 'Full-Stack Developer',
+        impact: ["Improved performance by 50%"],
+        role: "Full-Stack Developer",
         featured: true,
       };
 
       const result = validateWithDetails(validProject, ProjectSchema);
-      
+
       expect(result.success).toBe(true);
       expect(result.data).toEqual(validProject);
       expect(result.errors).toHaveLength(0);
     });
 
-    it('should return errors for invalid project data', () => {
+    it("should return errors for invalid project data", () => {
       const invalidProject = {
-        slug: '', // Invalid: empty slug
-        name: 'Test Project',
-        summary: 'Short', // Invalid: too short
+        slug: "", // Invalid: empty slug
+        name: "Test Project",
+        summary: "Short", // Invalid: too short
         tech: [], // Invalid: empty array
         links: {
-          live: 'invalid-url', // Invalid: not a URL
+          live: "invalid-url", // Invalid: not a URL
         },
         impact: [],
-        role: '',
-        featured: 'yes', // Invalid: should be boolean
+        role: "",
+        featured: "yes", // Invalid: should be boolean
       };
 
       const result = validateWithDetails(invalidProject, ProjectSchema);
-      
+
       expect(result.success).toBe(false);
       expect(result.errors.length).toBeGreaterThan(0);
-      
+
       // Check specific error fields
       const errorFields = result.errors.map(error => error.field);
-      expect(errorFields).toContain('slug');
-      expect(errorFields).toContain('summary');
-      expect(errorFields).toContain('tech');
-      expect(errorFields).toContain('featured');
+      expect(errorFields).toContain("slug");
+      expect(errorFields).toContain("summary");
+      expect(errorFields).toContain("tech");
+      expect(errorFields).toContain("featured");
     });
   });
 
-  describe('validateContentWithWarnings', () => {
-    it('should return warnings for missing optional fields', () => {
+  describe("validateContentWithWarnings", () => {
+    it("should return warnings for missing optional fields", () => {
       const projectWithMissingOptionals = {
-        slug: 'test-project',
-        name: 'Test Project',
-        summary: 'A test project for validation',
-        tech: ['React'],
+        slug: "test-project",
+        name: "Test Project",
+        summary: "A test project for validation",
+        tech: ["React"],
         links: {},
-        impact: ['Some impact'],
-        role: 'Developer',
+        impact: ["Some impact"],
+        role: "Developer",
         featured: false,
         // Missing optional fields: description, images, metrics
       };
@@ -82,47 +87,47 @@ describe('Content Validation', () => {
       const result = validateContentWithWarnings(
         projectWithMissingOptionals,
         ProjectSchema,
-        ['description', 'images', 'metrics']
+        ["description", "images", "metrics"]
       );
 
       expect(result.success).toBe(true);
       expect(result.warnings.length).toBeGreaterThan(0);
-      
+
       const warningFields = result.warnings.map(warning => warning.field);
-      expect(warningFields).toContain('description');
-      expect(warningFields).toContain('images');
-      expect(warningFields).toContain('metrics');
+      expect(warningFields).toContain("description");
+      expect(warningFields).toContain("images");
+      expect(warningFields).toContain("metrics");
     });
   });
 
-  describe('batchValidate', () => {
-    it('should validate multiple items', () => {
+  describe("batchValidate", () => {
+    it("should validate multiple items", () => {
       const items = [
         {
           data: {
-            slug: 'project-1',
-            name: 'Project 1',
-            summary: 'First project',
-            tech: ['React'],
+            slug: "project-1",
+            name: "Project 1",
+            summary: "First project",
+            tech: ["React"],
             links: {},
-            impact: ['Impact 1'],
-            role: 'Developer',
+            impact: ["Impact 1"],
+            role: "Developer",
             featured: false,
           },
-          context: 'project-1.json',
+          context: "project-1.json",
         },
         {
           data: {
-            slug: '', // Invalid
-            name: 'Project 2',
-            summary: 'Second project',
-            tech: ['Vue'],
+            slug: "", // Invalid
+            name: "Project 2",
+            summary: "Second project",
+            tech: ["Vue"],
             links: {},
-            impact: ['Impact 2'],
-            role: 'Developer',
+            impact: ["Impact 2"],
+            role: "Developer",
             featured: false,
           },
-          context: 'project-2.json',
+          context: "project-2.json",
         },
       ];
 
@@ -130,19 +135,19 @@ describe('Content Validation', () => {
 
       expect(results).toHaveLength(2);
       expect(results[0].success).toBe(true);
-      expect(results[0].context).toBe('project-1.json');
+      expect(results[0].context).toBe("project-1.json");
       expect(results[1].success).toBe(false);
-      expect(results[1].context).toBe('project-2.json');
+      expect(results[1].context).toBe("project-2.json");
     });
   });
 
-  describe('validateProjectSlug', () => {
-    it('should validate correct slug format', () => {
+  describe("validateProjectSlug", () => {
+    it("should validate correct slug format", () => {
       const validSlugs = [
-        'project-name',
-        'my-awesome-project',
-        'project123',
-        'simple',
+        "project-name",
+        "my-awesome-project",
+        "project123",
+        "simple",
       ];
 
       validSlugs.forEach(slug => {
@@ -152,15 +157,15 @@ describe('Content Validation', () => {
       });
     });
 
-    it('should reject invalid slug formats', () => {
+    it("should reject invalid slug formats", () => {
       const invalidSlugs = [
-        'Project Name', // Contains spaces and uppercase
-        'project_name', // Contains underscore
-        '-project', // Starts with hyphen
-        'project-', // Ends with hyphen
-        'project--name', // Double hyphen
-        '', // Empty
-        'project.name', // Contains dot
+        "Project Name", // Contains spaces and uppercase
+        "project_name", // Contains underscore
+        "-project", // Starts with hyphen
+        "project-", // Ends with hyphen
+        "project--name", // Double hyphen
+        "", // Empty
+        "project.name", // Contains dot
       ];
 
       invalidSlugs.forEach(slug => {
@@ -171,13 +176,13 @@ describe('Content Validation', () => {
     });
   });
 
-  describe('validateUrl', () => {
-    it('should validate correct URLs', () => {
+  describe("validateUrl", () => {
+    it("should validate correct URLs", () => {
       const validUrls = [
-        'https://example.com',
-        'http://localhost:3000',
-        'https://github.com/user/repo',
-        'https://subdomain.example.com/path?query=value',
+        "https://example.com",
+        "http://localhost:3000",
+        "https://github.com/user/repo",
+        "https://subdomain.example.com/path?query=value",
       ];
 
       validUrls.forEach(url => {
@@ -187,13 +192,8 @@ describe('Content Validation', () => {
       });
     });
 
-    it('should reject invalid URLs', () => {
-      const invalidUrls = [
-        'not-a-url',
-        '',
-        'invalid-url-format',
-        'just-text',
-      ];
+    it("should reject invalid URLs", () => {
+      const invalidUrls = ["not-a-url", "", "invalid-url-format", "just-text"];
 
       invalidUrls.forEach(url => {
         const result = validateUrl(url);
@@ -203,13 +203,13 @@ describe('Content Validation', () => {
     });
   });
 
-  describe('validateEmail', () => {
-    it('should validate correct email addresses', () => {
+  describe("validateEmail", () => {
+    it("should validate correct email addresses", () => {
       const validEmails = [
-        'test@example.com',
-        'user.name@domain.co.uk',
-        'user+tag@example.org',
-        'firstname.lastname@company.com',
+        "test@example.com",
+        "user.name@domain.co.uk",
+        "user+tag@example.org",
+        "firstname.lastname@company.com",
       ];
 
       validEmails.forEach(email => {
@@ -219,14 +219,14 @@ describe('Content Validation', () => {
       });
     });
 
-    it('should reject invalid email addresses', () => {
+    it("should reject invalid email addresses", () => {
       const invalidEmails = [
-        'not-an-email',
-        '@example.com',
-        'user@',
-        'user@.com',
-        '',
-        'invalid.email',
+        "not-an-email",
+        "@example.com",
+        "user@",
+        "user@.com",
+        "",
+        "invalid.email",
       ];
 
       invalidEmails.forEach(email => {
@@ -237,12 +237,12 @@ describe('Content Validation', () => {
     });
   });
 
-  describe('validateDate', () => {
-    it('should validate correct date formats', () => {
+  describe("validateDate", () => {
+    it("should validate correct date formats", () => {
       const validDates = [
-        '2023-12-01',
-        '2023-12-01T10:30:00Z',
-        '2023-12-01T10:30:00.000Z',
+        "2023-12-01",
+        "2023-12-01T10:30:00Z",
+        "2023-12-01T10:30:00.000Z",
         new Date().toISOString(),
       ];
 
@@ -253,12 +253,12 @@ describe('Content Validation', () => {
       });
     });
 
-    it('should reject invalid date formats', () => {
+    it("should reject invalid date formats", () => {
       const invalidDates = [
-        'not-a-date',
-        'invalid-date-format',
-        '',
-        '32/13/2023',
+        "not-a-date",
+        "invalid-date-format",
+        "",
+        "32/13/2023",
       ];
 
       invalidDates.forEach(date => {
@@ -269,62 +269,62 @@ describe('Content Validation', () => {
     });
   });
 
-  describe('formatValidationErrors', () => {
-    it('should format errors with field names and messages', () => {
+  describe("formatValidationErrors", () => {
+    it("should format errors with field names and messages", () => {
       const errors = [
         {
-          field: 'name',
-          message: 'Name is required',
-          code: 'required',
-          value: '',
+          field: "name",
+          message: "Name is required",
+          code: "required",
+          value: "",
         },
         {
-          field: 'email',
-          message: 'Invalid email format',
-          code: 'invalid_email',
-          value: 'invalid-email',
+          field: "email",
+          message: "Invalid email format",
+          code: "invalid_email",
+          value: "invalid-email",
         },
       ];
 
       const formatted = formatValidationErrors(errors);
 
       expect(formatted).toHaveLength(2);
-      expect(formatted[0]).toContain('name: Name is required');
-      expect(formatted[1]).toContain('email: Invalid email format');
-      expect(formatted[1]).toContain('invalid-email');
+      expect(formatted[0]).toContain("name: Name is required");
+      expect(formatted[1]).toContain("email: Invalid email format");
+      expect(formatted[1]).toContain("invalid-email");
     });
   });
 
-  describe('createValidationReport', () => {
-    it('should create a comprehensive validation report', () => {
+  describe("createValidationReport", () => {
+    it("should create a comprehensive validation report", () => {
       const fileResults = [
         {
-          filePath: 'project-1.json',
+          filePath: "project-1.json",
           valid: true,
           errors: [],
           warnings: [],
         },
         {
-          filePath: 'project-2.json',
+          filePath: "project-2.json",
           valid: false,
           errors: [
             {
-              field: 'slug',
-              message: 'Slug is required',
-              code: 'required',
+              field: "slug",
+              message: "Slug is required",
+              code: "required",
             },
           ],
           warnings: [],
         },
         {
-          filePath: 'project-3.json',
+          filePath: "project-3.json",
           valid: true,
           errors: [],
           warnings: [
             {
-              field: 'description',
-              message: 'Description is recommended',
-              code: 'missing_recommended',
+              field: "description",
+              message: "Description is recommended",
+              code: "missing_recommended",
             },
           ],
         },

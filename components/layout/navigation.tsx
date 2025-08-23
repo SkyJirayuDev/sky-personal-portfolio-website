@@ -25,7 +25,12 @@ const defaultSections: NavigationSection[] = [
   { id: "about", label: "About", href: "#about", order: 1 },
   { id: "skills", label: "Skills", href: "#skills", order: 2 },
   { id: "experience", label: "Experience", href: "#experience", order: 3 },
-  { id: "certifications", label: "Certifications", href: "#certifications", order: 4 },
+  {
+    id: "certifications",
+    label: "Certifications",
+    href: "#certifications",
+    order: 4,
+  },
   { id: "projects", label: "Projects", href: "#projects", order: 5 },
   { id: "contact", label: "Contact", href: "#contact", order: 6 },
 ];

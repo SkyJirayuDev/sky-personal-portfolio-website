@@ -37,24 +37,27 @@ export function useAccessibility() {
   }, []);
 
   // Function to announce content to screen readers
-  const announce = useCallback((message: string, priority: "polite" | "assertive" = "polite") => {
-    setAnnouncements(prev => [...prev, message]);
-    
-    // Create a temporary element for screen reader announcement
-    const announcement = document.createElement("div");
-    announcement.setAttribute("aria-live", priority);
-    announcement.setAttribute("aria-atomic", "true");
-    announcement.className = "sr-only";
-    announcement.textContent = message;
-    
-    document.body.appendChild(announcement);
-    
-    // Remove after announcement
-    setTimeout(() => {
-      document.body.removeChild(announcement);
-      setAnnouncements(prev => prev.filter(a => a !== message));
-    }, 1000);
-  }, []);
+  const announce = useCallback(
+    (message: string, priority: "polite" | "assertive" = "polite") => {
+      setAnnouncements(prev => [...prev, message]);
+
+      // Create a temporary element for screen reader announcement
+      const announcement = document.createElement("div");
+      announcement.setAttribute("aria-live", priority);
+      announcement.setAttribute("aria-atomic", "true");
+      announcement.className = "sr-only";
+      announcement.textContent = message;
+
+      document.body.appendChild(announcement);
+
+      // Remove after announcement
+      setTimeout(() => {
+        document.body.removeChild(announcement);
+        setAnnouncements(prev => prev.filter(a => a !== message));
+      }, 1000);
+    },
+    []
+  );
 
   return {
     prefersReducedMotion,
@@ -76,9 +79,11 @@ export function useFocusTrap(isActive: boolean) {
     const focusableElements = containerRef.querySelectorAll(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
     );
-    
+
     const firstElement = focusableElements[0] as HTMLElement;
-    const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+    const lastElement = focusableElements[
+      focusableElements.length - 1
+    ] as HTMLElement;
 
     const handleTabKey = (e: KeyboardEvent) => {
       if (e.key !== "Tab") return;
