@@ -1,0 +1,73 @@
+{
+  "slug": "ai-finforecaster",
+  "name": "AI-FinForecaster - Financial Forecasting Web App",
+  "summary": "Developed FastAPI + Prophet backend and Next.js dashboard for 30-360 day revenue projections with CSV/PDF export and CI pipeline on Railway.",
+  "description": "A comprehensive financial forecasting application that uses Facebook's Prophet algorithm to provide accurate revenue projections. Features include interactive dashboards, multiple export formats, and automated CI/CD deployment.",
+  "tech": [
+    "Next.js",
+    "TypeScript",
+    "FastAPI",
+    "Python",
+    "Prophet",
+    "Recharts",
+    "Railway",
+    "GitHub Actions",
+    "CSV Export",
+    "PDF Export"
+  ],
+  "links": {
+    "live": "https://ai-finforecaster.vercel.app",
+    "repo": "https://github.com/SkyJirayuDev/ai-finforecaster"
+  },
+  "impact": [
+    "Provides 30-360 day revenue forecasting with high accuracy",
+    "Automated CI pipeline for rapid development iterations",
+    "Interactive data visualization with Recharts",
+    "Multiple export formats for business reporting"
+  ],
+  "role": "Full-Stack Developer & Data Scientist",
+  "featured": true,
+  "category": "AI/Data Application",
+  "startDate": "2024-09-01",
+  "endDate": "2025-07-31",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Financial forecasting dashboard with interactive charts",
+      "width": 1200,
+      "height": 800,
+      "caption": "Interactive dashboard showing revenue projections and trends"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Prophet algorithm configuration interface",
+      "width": 1200,
+      "height": 800,
+      "caption": "Advanced forecasting parameters and model configuration"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Export functionality with CSV and PDF options",
+      "width": 1200,
+      "height": 800,
+      "caption": "Flexible export options for business reporting"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Forecast Range",
+      "value": "30-360 days",
+      "description": "Flexible forecasting periods for different business needs"
+    },
+    {
+      "label": "Deployment Speed",
+      "value": "Rapid iterations",
+      "description": "CI pipeline on Railway for quick updates"
+    },
+    {
+      "label": "Export Formats",
+      "value": "CSV/PDF",
+      "description": "Multiple formats for data analysis and reporting"
+    }
+  ]
+}

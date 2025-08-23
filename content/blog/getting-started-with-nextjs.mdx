@@ -1,0 +1,110 @@
+---
+title: Getting Started with Next.js 15 and App Router
+description: A comprehensive guide to building modern web applications with Next.js 15, featuring the new App Router and React Server Components.
+date: 2024-01-15
+tags: [Next.js, React, TypeScript, Web Development]
+featured: true
+author: Jirayu Saisuwan
+image: /images/blog/nextjs-guide.jpg
+---
+
+# Getting Started with Next.js 15 and App Router
+
+Next.js 15 introduces powerful new features that make building modern web applications faster and more efficient than ever. In this comprehensive guide, we'll explore the App Router, React Server Components, and best practices for building production-ready applications.
+
+## What's New in Next.js 15
+
+The latest version of Next.js brings several exciting improvements:
+
+- **Enhanced App Router**: Better performance and developer experience
+- **React Server Components**: Improved server-side rendering capabilities
+- **Turbopack**: Faster build times and hot reloading
+- **Improved TypeScript Support**: Better type inference and error messages
+
+## Setting Up Your Project
+
+Let's start by creating a new Next.js project with TypeScript:
+
+```bash
+npx create-next-app@latest my-app --typescript --tailwind --eslint --app
+cd my-app
+npm run dev
+```
+
+This command creates a new Next.js project with:
+
+- TypeScript configuration
+- Tailwind CSS for styling
+- ESLint for code quality
+- App Router enabled by default
+
+## Understanding the App Router
+
+The App Router is built on React Server Components and introduces a new file-based routing system:
+
+```
+app/
+├── layout.tsx          # Root layout
+├── page.tsx           # Home page
+├── about/
+│   └── page.tsx       # About page
+└── blog/
+    ├── page.tsx       # Blog listing
+    └── [slug]/
+        └── page.tsx   # Dynamic blog post
+```
+
+### Creating Your First Route
+
+Create a new route by adding a `page.tsx` file in a folder:
+
+```typescript
+// app/about/page.tsx
+export default function AboutPage() {
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>Welcome to our about page!</p>
+    </div>
+  );
+}
+```
+
+## React Server Components
+
+Server Components run on the server and can directly access databases, file systems, and other server-side resources:
+
+```typescript
+// app/posts/page.tsx
+import { getPosts } from '@/lib/posts';
+
+export default async function PostsPage() {
+  // This runs on the server
+  const posts = await getPosts();
+
+  return (
+    <div>
+      <h1>Blog Posts</h1>
+      {posts.map(post => (
+        <article key={post.id}>
+          <h2>{post.title}</h2>
+          <p>{post.excerpt}</p>
+        </article>
+      ))}
+    </div>
+  );
+}
+```
+
+## Best Practices
+
+1. **Use TypeScript**: Take advantage of type safety and better developer experience
+2. **Optimize Images**: Use `next/image` for automatic optimization
+3. **Implement Proper SEO**: Use metadata API for better search engine optimization
+4. **Follow Performance Guidelines**: Leverage Server Components and static generation
+
+## Conclusion
+
+Next.js 15 with App Router provides a powerful foundation for building modern web applications. The combination of Server Components, improved routing, and enhanced developer experience makes it an excellent choice for your next project.
+
+Start building with Next.js 15 today and experience the future of web development!

@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Meta Full-Stack Engineer Specialization",
+    "issuer": "Meta",
+    "url": "https://www.credly.com/badges/72217fd3-f960-4c4a-bb3a-6796a741f2ae/public_url",
+    "date": "2025",
+    "credential_id": "72217fd3-f960-4c4a-bb3a-6796a741f2ae",
+    "skills": ["Front-End Development", "Back-End Development"],
+    "description": "End-to-end program covering front end and back end, databases and APIs, version control and deployment. Delivered production-style full-stack projects."
+  },
+  {
+    "name": "Meta Front-End Developer Professional",
+    "issuer": "Meta",
+    "url": "https://coursera.org/share/fd08ffd32f45df3879596ad80a8dd018",
+    "date": "2025",
+    "credential_id": "ZZQITDDW3XFO",
+    "skills": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "UI/UX Design",
+      "Version Control"
+    ],
+    "description": "Comprehensive front-end development program covering React, responsive design, and modern web development practices."
+  },
+  {
+    "name": "Meta Back-End Developer Professional",
+    "issuer": "Meta",
+    "url": "https://coursera.org/share/9291a4bb2c1e1cbecf7f728094941d9f",
+    "date": "2025",
+    "credential_id": "K7WQL6V22JEQ",
+    "skills": [
+      "Python",
+      "Django",
+      "Databases",
+      "APIs",
+      "Version Control"
+    ],
+    "description": "Comprehensive Front-end development program covering React, responsive design, and modern web development practices."
+  },
+  {
+    "name": "Oracle Cloud Infrastructure Foundations",
+    "issuer": "Oracle",
+    "url": "https://coursera.org/share/8edb5b1803efc7521c4239d1cb583f63",
+    "date": "2025",
+    "credential_id": "EBN266FOF69R",
+    "skills": [
+      "Cloud Computing",
+      "Oracle Cloud Infrastructure",
+      "Networking",
+      "Security",
+      "Database Services"
+    ],
+    "description": "Foundational knowledge of Oracle Cloud Infrastructure services, architecture, and core concepts."
+  },
+  {
+    "name": "Agile with Atlassian Jira",
+    "issuer": "Atlassian",
+    "url": "https://coursera.org/share/f2c765b42814ec76bfd376736b0a7699",
+    "date": "2025",
+    "credential_id": "TZ4GEU5LK5V3",
+    "skills": [
+      "Agile Methodologies",
+      "Jira",
+      "Scrum",
+      "Project Management",
+      "Team Collaboration"
+    ],
+    "description": "Comprehensive training on Agile methodologies and Jira project management tools."
+  },
+  {
+    "name": "Datacom Software Development Simulation",
+    "issuer": "Forage",
+    "url": "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/gCW7Xki5Y3vNpBmnn/L3NcyCoAjLno9d3T9_gCW7Xki5Y3vNpBmnn_7q9xfN9WibrHpdbSp_1746191115154_completion_certificate.pdf",
+    "date": "2024",
+    "credential_id": "5CG3gPkKCQt64vX3W",
+    "skills": [
+      "Software Development",
+      "Code Review",
+      "Bug Fixing",
+      "Agile",
+      "Enterprise Development"
+    ],
+    "description": "Virtual internship simulation covering enterprise software development practices and code review processes."
+  },
+  {
+    "name": "Responsive Website Development and Design Specialization",
+    "issuer": "University of London",
+    "url": "https://coursera.org/share/53cc10b367c74e470ee0c430ef726b32",
+    "date": "2024",
+    "credential_id": "36P0XGXVOK0P",
+    "skills": [
+      "Responsive Design",
+      "HTML/CSS",
+      "JavaScript",
+      "Web Development",
+      "Mobile-First Design"
+    ],
+    "description": "Comprehensive specialization covering responsive web design principles and modern development practices."
+  },
+  {
+    "name": "User Experience Research and Design Specialization",
+    "issuer": "University of Michigan",
+    "url": "https://coursera.org/verify/specialization/HW88WIF8NE9J",
+    "date": "2024",
+    "credential_id": "HW88WIF8NE9J",
+    "skills": [
+      "User Experience Design",
+      "User Research",
+      "Prototyping",
+      "Usability Testing",
+      "Design Thinking"
+    ],
+    "description": "Specialization focusing on user-centered design principles and research methodologies."
+  },
+  {
+    "name": "Software Development Lifecycle Specialization",
+    "issuer": "University of Minnesota",
+    "url": "https://coursera.org/share/f53fa4df0412a6e10e89ffe087801466",
+    "date": "2024",
+    "credential_id": "29J6FU589XFL",
+    "skills": [
+      "Software Development",
+      "Project Management",
+      "Agile Methodologies",
+      "Testing",
+      "Version Control"
+    ],
+    "description": "Comprehensive coverage of software development lifecycle and project management practices."
+  },
+  {
+    "name": "Advanced JavaScript",
+    "issuer": "Scrimba",
+    "url": "https://coursera.org/share/2160d294f926eb1d3bbc1f41eaca6acc",
+    "date": "2024",
+    "credential_id": "DPYJMB2GYFFV",
+    "skills": [
+      "Advanced JavaScript",
+      "ES6+",
+      "Async Programming",
+      "DOM Manipulation",
+      "Modern JavaScript"
+    ],
+    "description": "Advanced JavaScript concepts including modern ES6+ features and asynchronous programming."
+  },
+  {
+    "name": "HTML, CSS, and JavaScript for Web Developers",
+    "issuer": "Johns Hopkins University",
+    "url": "https://coursera.org/share/413be9f119097b86f1aeb5c126f174eb",
+    "date": "2024",
+    "credential_id": "HC221HP9LPKC",
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Design",
+      "Web Development"
+    ],
+    "description": "Comprehensive course covering fundamental web development technologies and best practices."
+  },
+  {
+    "name": "Algorithmic Toolbox",
+    "issuer": "UC San Diego",
+    "url": "https://coursera.org/share/d19fdcfe8f72fd59db0326ce89ad6c75",
+    "date": "2024",
+    "credential_id": "4FXLV50DARLL",
+    "skills": [
+      "Algorithms",
+      "Data Structures",
+      "Problem Solving",
+      "Computer Science",
+      "Programming"
+    ],
+    "description": "Fundamental algorithms and data structures for efficient problem solving."
+  },
+  {
+    "name": "Data Structures",
+    "issuer": "UC San Diego",
+    "url": "https://coursera.org/share/6f538535cfdb693cbfc931efa29d168c",
+    "date": "2024",
+    "credential_id": "8WQMUM26AWMZ",
+    "skills": [
+      "Data Structures",
+      "Algorithms",
+      "Computer Science",
+      "Programming",
+      "Problem Solving"
+    ],
+    "description": "Advanced data structures and their applications in software development."
+  }
+]

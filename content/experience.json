@@ -1,0 +1,101 @@
+[
+  {
+    "company": "Brightdesignth",
+    "role": "Software Engineer/Developer (Intern to Freelance)",
+    "startDate": "2024-09-01",
+    "endDate": "Present",
+    "location": "Auckland, New Zealand",
+    "description": "Built responsive websites for NZ & AU clients using modern web technologies with focus on performance and SEO optimization.",
+    "achievements": [
+      "Built responsive websites for NZ & AU clients using Nuxt.js, Vue, SCSS, Tailwind CSS, Next.js",
+      "Implemented SEO optimization strategies improving search rankings and organic traffic",
+      "Collaborated in Agile sprints with cross-functional teams for efficient project delivery",
+      "Managed version control and branching strategies using GitHub and Bitbucket",
+      "Set up CI/CD pipelines on AWS S3 + CloudFront with GitHub Actions for automated deployments"
+    ],
+    "tech": [
+      "Nuxt.js",
+      "Vue.js",
+      "SCSS",
+      "Tailwind CSS",
+      "Next.js",
+      "GitHub",
+      "GitHub Actions",
+      "AWS S3",
+      "CloudFront",
+      "Bitbucket",
+      "SEO"
+    ]
+  },
+  {
+    "company": "Auckland Institute of Studies (AIS)",
+    "role": "Full Stack Engineer (Project-Based)",
+    "startDate": "2024-09-01",
+    "endDate": "2025-07-31",
+    "location": "Auckland, New Zealand",
+    "description": "Led postgraduate development projects focusing on e-commerce and financial forecasting applications with modern tech stack.",
+    "achievements": [
+      "Led development of Shopwise e-commerce platform with GPT-powered chatbot and personalized recommendations",
+      "Built AI-FinForecaster financial forecasting application with 30-360 day revenue projections",
+      "Architected applications using Next.js, TypeScript, FastAPI, and MongoDB for scalable solutions",
+      "Implemented automated testing suites and CI/CD pipelines with GitHub Actions",
+      "Deployed applications to Vercel and Railway with optimized performance and reliability"
+    ],
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "FastAPI",
+      "MongoDB",
+      "GitHub Actions",
+      "Vercel",
+      "Railway",
+      "OpenAI API",
+      "Prophet"
+    ]
+  },
+  {
+    "company": "CP ALL Plc (7-Eleven)",
+    "role": "Webmaster Specialist",
+    "startDate": "2018-02-01",
+    "endDate": "2022-10-31",
+    "location": "Bangkok, Thailand",
+    "description": "Managed multilingual corporate portals across Southeast Asia with focus on UX/UI optimization and performance monitoring.",
+    "achievements": [
+      "Managed multilingual corporate portals for Thailand, Laos, and Cambodia markets",
+      "Directed UX/UI design initiatives and branding consistency across all digital platforms",
+      "Implemented performance optimization strategies meeting strict KPI requirements",
+      "Coordinated cross-functional teams for seamless project execution and delivery",
+      "Led incident response procedures ensuring minimal downtime and quick resolution",
+      "Utilized analytics tools for data-driven decision making and successful feature rollouts"
+    ],
+    "tech": [
+      "Web Development",
+      "UX/UI Design",
+      "Performance Optimization",
+      "Analytics",
+      "Content Management",
+      "Multilingual Systems"
+    ]
+  },
+  {
+    "company": "Restaurant",
+    "role": "Duty Manager",
+    "startDate": "2023-01-01",
+    "endDate": "Present",
+    "location": "Auckland, New Zealand",
+    "description": "Supervised staff operations and service delivery in high-pressure restaurant environment, developing leadership and problem-solving skills.",
+    "achievements": [
+      "Supervised staff schedules and coordinated team operations for optimal service delivery",
+      "Resolved service issues and customer complaints with effective problem-solving approaches",
+      "Developed leadership skills in high-pressure environment with quick decision-making requirements",
+      "Applied transferable problem-solving skills from technical background to operational challenges"
+    ],
+    "tech": [
+      "Leadership",
+      "Problem Solving",
+      "Team Management",
+      "Customer Service",
+      "Operations Management"
+    ]
+  }
+]

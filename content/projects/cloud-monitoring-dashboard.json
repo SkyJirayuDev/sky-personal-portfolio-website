@@ -1,0 +1,71 @@
+{
+  "slug": "wellness-websites",
+  "name": "Wellness Websites - Freelance Builds (6 sites across AU/NZ)",
+  "summary": "Built responsive marketing websites using Nuxt.js/Vue 3, Tailwind CSS, SCSS, deployed via AWS S3 + CloudFront with SEO optimization and mobile-first layouts.",
+  "description": "A series of high-performance wellness brand websites built for Australian and New Zealand clients, featuring responsive design, SEO optimization, and lightweight assets for optimal performance across all devices.",
+  "tech": [
+    "Nuxt.js",
+    "Vue 3",
+    "Tailwind CSS",
+    "SCSS",
+    "AWS S3",
+    "CloudFront",
+    "GitHub Actions",
+    "SEO Optimization",
+    "Responsive Design"
+  ],
+  "links": {
+    "live": "https://www.linkedin.com/in/skyjirayu/"
+  },
+  "impact": [
+    "Built 6 responsive marketing websites across AU/NZ markets",
+    "Implemented SEO optimization improving search rankings",
+    "Achieved mobile-first responsive layouts for all device sizes",
+    "Deployed lightweight assets for optimal performance"
+  ],
+  "role": "Frontend Developer & SEO Specialist",
+  "featured": true,
+  "category": "Web Development/Marketing",
+  "startDate": "2024-09-01",
+  "endDate": "Present",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Wellness website homepage with modern design",
+      "width": 1200,
+      "height": 800,
+      "caption": "Modern wellness brand website with responsive design"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Mobile-first responsive layout showcase",
+      "width": 400,
+      "height": 800,
+      "caption": "Mobile-optimized design with touch-friendly navigation"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "SEO optimization dashboard and analytics",
+      "width": 1200,
+      "height": 600,
+      "caption": "SEO performance metrics and optimization results"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Websites Built",
+      "value": "6 sites",
+      "description": "Across Australian and New Zealand markets"
+    },
+    {
+      "label": "Performance",
+      "value": "Lightweight",
+      "description": "Optimized assets for fast loading"
+    },
+    {
+      "label": "SEO",
+      "value": "Optimized",
+      "description": "Mobile-first layouts with SEO best practices"
+    }
+  ]
+}

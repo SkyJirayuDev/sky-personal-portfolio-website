@@ -1,0 +1,63 @@
+{
+  "slug": "cinema-finder",
+  "name": "Cinema Finder - Datacom Job Simulation (Forage)",
+  "summary": "Performed code reviews, resolved bugs, and organised Agile backlog in enterprise setting as part of Datacom virtual internship simulation.",
+  "description": "A comprehensive software development simulation project focusing on enterprise development practices, including code review processes, bug resolution, and Agile project management in a professional team environment.",
+  "tech": [
+    "JavaScript",
+    "Code Review",
+    "Bug Fixing",
+    "Agile Methodologies",
+    "Enterprise Development",
+    "Version Control",
+    "Team Collaboration"
+  ],
+  "links": {
+    "live": "https://skyjirayudev.github.io/cinema-finder-main/#/",
+    "repo": "https://github.com/SkyJirayuDev/cinema-finder-main"
+  },
+  "impact": [
+    "Completed comprehensive code review processes",
+    "Successfully resolved multiple software bugs",
+    "Organized and managed Agile project backlog",
+    "Gained experience in enterprise development practices"
+  ],
+  "role": "Software Developer (Simulation)",
+  "featured": false,
+  "category": "Enterprise Simulation",
+  "startDate": "2024-04-01",
+  "endDate": "2024-04-30",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Code review interface and collaboration tools",
+      "width": 1200,
+      "height": 800,
+      "caption": "Enterprise code review and collaboration workflow"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Agile backlog management dashboard",
+      "width": 1200,
+      "height": 600,
+      "caption": "Agile project management and backlog organization"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Simulation",
+      "value": "Datacom/Forage",
+      "description": "Professional enterprise development simulation"
+    },
+    {
+      "label": "Skills Focus",
+      "value": "Code Review",
+      "description": "Enterprise code review and bug resolution"
+    },
+    {
+      "label": "Methodology",
+      "value": "Agile",
+      "description": "Agile backlog management and team collaboration"
+    }
+  ]
+}

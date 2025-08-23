@@ -1,0 +1,462 @@
+[
+  {
+    "group": "Frontend",
+    "order": 1,
+    "items": [
+      {
+        "name": "HTML",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Semantic HTML5 with accessibility best practices",
+        "years": 6
+      },
+      {
+        "name": "CSS",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Advanced CSS3, Flexbox, Grid, and responsive design",
+        "years": 6
+      },
+      {
+        "name": "JavaScript",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Modern ES6+ JavaScript with advanced concepts",
+        "years": 6
+      },
+      {
+        "name": "TypeScript",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Type-safe JavaScript development with advanced type system knowledge",
+        "years": 4
+      },
+      {
+        "name": "React.js",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Advanced React development with hooks, context, and performance optimization",
+        "years": 5
+      },
+      {
+        "name": "Next.js",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Full-stack React framework with SSR, SSG, and API routes",
+        "years": 4
+      },
+      {
+        "name": "Vue.js",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Progressive framework for building user interfaces",
+        "years": 3
+      },
+      {
+        "name": "Nuxt.js",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Vue.js framework for production-ready applications",
+        "years": 2
+      },
+      {
+        "name": "Tailwind CSS",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Utility-first CSS framework for rapid UI development",
+        "years": 3
+      },
+      {
+        "name": "SCSS",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "CSS preprocessor with variables, mixins, and nesting",
+        "years": 4
+      },
+      {
+        "name": "Bootstrap",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "CSS framework for responsive web development",
+        "years": 5
+      },
+      {
+        "name": "Framer Motion",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Animations and interactions for React",
+        "years": 2
+      },
+      {
+        "name": "Radix UI",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Accessible UI primitives for React",
+        "years": 2
+      },
+      {
+        "name": "MDX",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Markdown with JSX for content",
+        "years": 1
+      }
+    ]
+  },
+  {
+    "group": "Backend & APIs",
+    "order": 2,
+    "items": [
+      {
+        "name": "Node.js",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Server-side JavaScript runtime with Express",
+        "years": 5
+      },
+      {
+        "name": "Express",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Fast, unopinionated web framework for Node.js",
+        "years": 5
+      },
+      {
+        "name": "Python",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Backend development with FastAPI and data processing",
+        "years": 3
+      },
+      {
+        "name": "FastAPI",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Modern Python web framework for building APIs",
+        "years": 2
+      },
+      {
+        "name": "Prophet",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Time series forecasting library by Facebook",
+        "years": 1
+      },
+      {
+        "name": "Pandas",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Data manipulation and analysis in Python",
+        "years": 2
+      },
+      {
+        "name": "REST APIs",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "RESTful API design and implementation",
+        "years": 5
+      },
+      {
+        "name": "Resend (Email API)",
+        "proficiency": 10,
+        "category": "Backend",
+        "description": "Transactional email API for Next.js",
+        "years": 1
+      }
+    ]
+  },
+  {
+    "group": "Database",
+    "order": 3,
+    "items": [
+      {
+        "name": "SQL",
+        "proficiency": 10,
+        "category": "Database",
+        "description": "Advanced SQL queries and database design",
+        "years": 4
+      },
+      {
+        "name": "PostgreSQL",
+        "proficiency": 10,
+        "category": "Database",
+        "description": "Schema design, indexing, performance tuning",
+        "years": 4
+      },
+      {
+        "name": "MongoDB (Mongoose)",
+        "proficiency": 10,
+        "category": "Database",
+        "description": "NoSQL database with Mongoose ODM",
+        "years": 3
+      },
+      {
+        "name": "JSON",
+        "proficiency": 10,
+        "category": "Database",
+        "description": "JSON data handling and manipulation",
+        "years": 6
+      },
+      {
+        "name": "CSV",
+        "proficiency": 10,
+        "category": "Database",
+        "description": "CSV data processing and export functionality",
+        "years": 3
+      }
+    ]
+  },
+  {
+    "group": "Authentication & Security",
+    "order": 4,
+    "items": [
+      {
+        "name": "NextAuth.js",
+        "proficiency": 10,
+        "category": "Security",
+        "description": "Complete authentication solution for Next.js",
+        "years": 2
+      },
+      {
+        "name": "JWT",
+        "proficiency": 10,
+        "category": "Security",
+        "description": "JSON Web Tokens for secure authentication",
+        "years": 3
+      },
+      {
+        "name": "bcrypt.js",
+        "proficiency": 10,
+        "category": "Security",
+        "description": "Password hashing and security",
+        "years": 3
+      },
+      {
+        "name": "Zod",
+        "proficiency": 10,
+        "category": "Security",
+        "description": "Type-safe schema validation",
+        "years": 2
+      }
+    ]
+  },
+  {
+    "group": "Cloud & DevOps",
+    "order": 5,
+    "items": [
+      {
+        "name": "Git",
+        "proficiency": 10,
+        "category": "DevOps",
+        "description": "Version control and collaborative development",
+        "years": 6
+      },
+      {
+        "name": "GitHub",
+        "proficiency": 10,
+        "category": "DevOps",
+        "description": "Git workflows, code review, GitHub Actions",
+        "years": 6
+      },
+      {
+        "name": "GitHub Actions",
+        "proficiency": 10,
+        "category": "DevOps",
+        "description": "CI/CD pipelines and workflow automation",
+        "years": 3
+      },
+      {
+        "name": "Bitbucket",
+        "proficiency": 10,
+        "category": "DevOps",
+        "description": "Git repository management and CI/CD",
+        "years": 2
+      },
+      {
+        "name": "AWS S3",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Object storage and static hosting",
+        "years": 3
+      },
+      {
+        "name": "CloudFront",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "AWS CDN for global content delivery",
+        "years": 2
+      },
+      {
+        "name": "Vercel",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Next.js-first hosting with preview deployments, serverless and edge functions, CI/CD.",
+        "years": 3
+      },
+      {
+        "name": "Railway",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Backend and API hosting with containers, managed Postgres, env vars, logs.",
+        "years": 3
+      },
+      {
+        "name": "Netlify",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Jamstack hosting with serverless functions, build previews, and forms.",
+        "years": 3
+      }
+    ]
+  },
+  {
+    "group": "Testing & Quality",
+    "order": 6,
+    "items": [
+      {
+        "name": "Playwright",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "E2E browser testing",
+        "years": 1
+      },
+      {
+        "name": "Vitest",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "Unit and integration testing",
+        "years": 1
+      },
+      {
+        "name": "Testing Library",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "React component testing utilities",
+        "years": 1
+      },
+      {
+        "name": "Jest DOM",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "DOM matchers for Jest",
+        "years": 1
+      },
+      {
+        "name": "axe-core",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "Accessibility engine for tests",
+        "years": 1
+      },
+      {
+        "name": "jest-axe",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "Accessibility assertions for Jest",
+        "years": 1
+      },
+      {
+        "name": "Lighthouse CI",
+        "proficiency": 10,
+        "category": "Testing",
+        "description": "Performance and best practices audits",
+        "years": 1
+      }
+    ]
+  },
+  {
+    "group": "Tools & Analytics",
+    "order": 7,
+    "items": [
+      {
+        "name": "VS Code",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "Primary development environment and extensions",
+        "years": 6
+      },
+      {
+        "name": "Postman",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "API testing and development",
+        "years": 4
+      },
+      {
+        "name": "Agile (Scrum)",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "Agile development methodologies and practices",
+        "years": 4
+      },
+      {
+        "name": "Figma",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "UI/UX design and prototyping",
+        "years": 3
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "Web analytics and performance tracking",
+        "years": 3
+      },
+      {
+        "name": "ESLint",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "Linting and code quality",
+        "years": 4
+      },
+      {
+        "name": "Prettier",
+        "proficiency": 10,
+        "category": "Tools",
+        "description": "Code formatting",
+        "years": 4
+      }
+    ]
+  },
+  {
+    "group": "Visualization & Utilities",
+    "order": 8,
+    "items": [
+      {
+        "name": "Mermaid",
+        "proficiency": 10,
+        "category": "Utilities",
+        "description": "Diagrams in Markdown",
+        "years": 1
+      },
+      {
+        "name": "Recharts",
+        "proficiency": 10,
+        "category": "Visualization",
+        "description": "Charting for React",
+        "years": 1
+      },
+      {
+        "name": "Fuse.js",
+        "proficiency": 10,
+        "category": "Utilities",
+        "description": "Lightweight fuzzy search for client-side filtering",
+        "years": 2
+      }
+    ]
+  },
+  {
+    "group": "AI",
+    "order": 9,
+    "items": [
+      {
+        "name": "OpenAI API",
+        "proficiency": 10,
+        "category": "AI",
+        "description": "GPT integration for chatbots and recommendations",
+        "years": 2
+      }
+    ]
+  }
+]

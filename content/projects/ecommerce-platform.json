@@ -1,0 +1,80 @@
+{
+  "slug": "shopwise",
+  "name": "Shopwise - Intelligent E-Commerce Platform",
+  "summary": "Full-stack marketplace with GPT-powered chatbot, personalised recommendations, fuzzy search, admin dashboard built with React.js, Next.js, TypeScript, MongoDB, and AI API.",
+  "description": "An intelligent e-commerce platform featuring AI-powered chatbot for customer support, personalized product recommendations, advanced fuzzy search capabilities, and comprehensive admin dashboard for inventory and order management.",
+  "tech": [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "MongoDB",
+    "OpenAI API",
+    "Fuse.js",
+    "GitHub Actions",
+    "Vercel",
+    "Mongoose",
+    "NextAuth.js"
+  ],
+  "links": {
+    "live": "https://sky-shop-wise-ecom.vercel.app",
+    "repo": "https://github.com/SkyJirayuDev/SkyShopWiseEcom"
+  },
+  "impact": [
+    "GPT-powered chatbot providing intelligent customer support",
+    "Personalized recommendations increasing user engagement",
+    "Advanced fuzzy search improving product discoverability",
+    "Automated testing and CI/CD with GitHub Actions and Vercel"
+  ],
+  "role": "Full-Stack Developer & AI Integration Specialist",
+  "featured": true,
+  "category": "E-commerce/AI Application",
+  "startDate": "2024-09-01",
+  "endDate": "2025-07-31",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Shopwise homepage with AI chatbot interface",
+      "width": 1200,
+      "height": 800,
+      "caption": "Modern e-commerce interface with integrated AI chatbot"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Personalized recommendations dashboard",
+      "width": 1200,
+      "height": 800,
+      "caption": "AI-powered personalized product recommendations"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Admin dashboard with inventory management",
+      "width": 1200,
+      "height": 800,
+      "caption": "Comprehensive admin dashboard for inventory and order management"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Advanced search with fuzzy matching",
+      "width": 1200,
+      "height": 800,
+      "caption": "Intelligent search with fuzzy matching and filters"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "AI Integration",
+      "value": "GPT-powered",
+      "description": "Intelligent chatbot and recommendations"
+    },
+    {
+      "label": "Search Technology",
+      "value": "Fuzzy Search",
+      "description": "Advanced product discovery with Fuse.js"
+    },
+    {
+      "label": "Deployment",
+      "value": "Automated CI/CD",
+      "description": "GitHub Actions with Vercel deployment"
+    }
+  ]
+}

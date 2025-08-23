@@ -1,0 +1,32 @@
+{
+  "name": "Sky Jirayu Saisuwan",
+  "title": "Full-Stack Software & Web Platform Engineer | Cloud & AI",
+  "location": "Auckland, New Zealand",
+  "bio": "Experienced Full-Stack Software & Web Platform Engineer specializing in Cloud and AI technologies. Passionate about building scalable web applications and implementing modern development practices.",
+  "profileImage": "/images/profile.png",
+  "education": [
+    {
+      "degree": "Master of Information Technology (MIT)",
+      "institution": "Auckland Institute of Studies (AIS)",
+      "location": "New Zealand",
+      "startDate": "2024-01-01",
+      "endDate": "2025-08-31",
+      "status": "Expected Aug 2025",
+      "award": "Academic Excellence in Postgraduate Studies (MIT) 2024"
+    },
+    {
+      "degree": "Bachelor of Science (Computer Science)",
+      "institution": "Kasetsart University",
+      "location": "Thailand",
+      "startDate": "2014-06-01",
+      "endDate": "2018-05-31",
+      "status": "Completed"
+    }
+  ],
+  "links": {
+    "email": "skyjirayusaisuwan@gmail.com",
+    "github": "https://github.com/skyjirayudev",
+    "linkedin": "https://www.linkedin.com/in/skyjirayu/",
+    "resume": "/images/Resume_Sky_Jirayu_Saisuwan.pdf"
+  }
+}

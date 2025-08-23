@@ -1,0 +1,64 @@
+{
+  "slug": "static-restaurant-site",
+  "name": "Static Restaurant Site Project",
+  "summary": "Built single-page Bootstrap site with AJAX + JSON, handling dynamic data and responsive design for optimal user experience.",
+  "description": "A dynamic single-page restaurant website built with Bootstrap framework, featuring AJAX-powered dynamic content loading, JSON data handling, and fully responsive design for seamless user experience across all devices.",
+  "tech": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Bootstrap",
+    "AJAX",
+    "JSON",
+    "Responsive Design",
+    "Single Page Application"
+  ],
+  "links": {
+    "live": "https://skyjirayudev.github.io/The-Static-Restaurant-Site/",
+    "repo": "https://github.com/SkyJirayuDev/The-Static-Restaurant-Site"
+  },
+  "impact": [
+    "Implemented dynamic content loading with AJAX",
+    "Achieved responsive design across all device sizes",
+    "Successfully handled JSON data for menu and content",
+    "Created smooth single-page application experience"
+  ],
+  "role": "Frontend Developer",
+  "featured": false,
+  "category": "Web Development",
+  "startDate": "2024-03-01",
+  "endDate": "2024-03-15",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Restaurant homepage with Bootstrap design",
+      "width": 1200,
+      "height": 800,
+      "caption": "Bootstrap-powered restaurant website with responsive layout"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Dynamic menu loading with AJAX",
+      "width": 1200,
+      "height": 600,
+      "caption": "Dynamic content loading using AJAX and JSON data"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Architecture",
+      "value": "Single Page",
+      "description": "SPA with dynamic content loading"
+    },
+    {
+      "label": "Framework",
+      "value": "Bootstrap",
+      "description": "Responsive design with Bootstrap CSS"
+    },
+    {
+      "label": "Data Handling",
+      "value": "AJAX + JSON",
+      "description": "Dynamic data loading and manipulation"
+    }
+  ]
+}

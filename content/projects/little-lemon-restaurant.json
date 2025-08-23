@@ -1,0 +1,70 @@
+{
+  "slug": "little-lemon-restaurant",
+  "name": "Little Lemon Restaurant - Meta Capstone (React)",
+  "summary": "Delivered mobile-first React site meeting Meta certification requirements with reusable components and accessibility focus.",
+  "description": "A comprehensive restaurant website built as the capstone project for Meta Front-End Developer certification, featuring mobile-first responsive design, reusable React components, and full accessibility compliance.",
+  "tech": [
+    "React",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Responsive Design",
+    "Accessibility",
+    "Mobile-First Design"
+  ],
+  "links": {
+    "live": "https://skyjirayudev.github.io/meta-front-end-developer-little-lemon-restaurant/",
+    "repo": "https://github.com/SkyJirayuDev/meta-front-end-developer-little-lemon-restaurant"
+  },
+  "impact": [
+    "Met all Meta certification requirements and standards",
+    "Achieved full accessibility compliance (WCAG 2.1 AA)",
+    "Implemented mobile-first responsive design approach",
+    "Created reusable component library for scalability"
+  ],
+  "role": "Frontend Developer",
+  "featured": false,
+  "category": "Web Application/Certification",
+  "startDate": "2024-05-01",
+  "endDate": "2024-06-15",
+  "images": [
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Little Lemon Restaurant homepage with modern design",
+      "width": 1200,
+      "height": 800,
+      "caption": "Modern restaurant website with mobile-first approach"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Responsive menu interface on mobile device",
+      "width": 400,
+      "height": 800,
+      "caption": "Mobile-optimized menu with touch-friendly interactions"
+    },
+    {
+      "src": "/images/placeholder.svg",
+      "alt": "Accessibility features demonstration",
+      "width": 1200,
+      "height": 600,
+      "caption": "Comprehensive accessibility features and compliance"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Certification",
+      "value": "Meta Capstone",
+      "description": "Successfully completed Meta Front-End Developer certification"
+    },
+    {
+      "label": "Accessibility",
+      "value": "WCAG 2.1 AA",
+      "description": "Full accessibility compliance achieved"
+    },
+    {
+      "label": "Design Approach",
+      "value": "Mobile-First",
+      "description": "Responsive design prioritizing mobile experience"
+    }
+  ]
+}
