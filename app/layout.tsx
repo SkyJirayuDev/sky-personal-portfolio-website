@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { AccessibilityProvider } from "@/components/providers/accessibility-provider";
 import { inter, fontVariables } from "@/lib/fonts";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Jirayu Saisuwan - Full-Stack Software & Web Platform Engineer",
@@ -53,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={fontVariables}>
+    <html lang="en" suppressHydrationWarning className={`${fontVariables} dark`}>
       <head>
         {/* Preload critical fonts */}
         <link
@@ -67,13 +68,27 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//images.unsplash.com" />
         <link rel="dns-prefetch" href="//via.placeholder.com" />
         <link rel="dns-prefetch" href="//githubusercontent.com" />
+
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function(){
+            try{
+              var key='portfolio-theme';
+              var t=localStorage.getItem(key);
+              var v = t && t!=='system' ? t : 'dark';
+              var root=document.documentElement;
+              root.classList.remove('light','dark');
+              root.classList.add(v);
+            }catch(e){}
+          })();`}
+        </Script>
       </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
+          storageKey="portfolio-theme"
         >
           <AccessibilityProvider>{children}</AccessibilityProvider>
         </ThemeProvider>

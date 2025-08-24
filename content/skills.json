@@ -100,6 +100,13 @@
         "category": "Frontend",
         "description": "Markdown with JSX for content",
         "years": 1
+      },
+      {
+        "name": "Responsive Web Design",
+        "proficiency": 10,
+        "category": "Frontend",
+        "description": "Mobile-first, Grid/Flexbox, accessible, Core Web Vitals",
+        "years": 1
       }
     ]
   },
@@ -273,6 +280,20 @@
         "years": 2
       },
       {
+        "name": "Docker",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Containers, images, multi-stage builds, Compose",
+        "years": 3
+      },
+      {
+        "name": "CI/CD",
+        "proficiency": 10,
+        "category": "Cloud",
+        "description": "Automated build-test-deploy pipelines, GitHub Actions",
+        "years": 3
+      },
+      {
         "name": "AWS S3",
         "proficiency": 10,
         "category": "Cloud",
@@ -328,7 +349,7 @@
         "years": 1
       },
       {
-        "name": "Testing Library",
+        "name": "React Testing Library",
         "proficiency": 10,
         "category": "Testing",
         "description": "React component testing utilities",
